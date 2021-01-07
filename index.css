@@ -209,10 +209,11 @@ b{
   /* about */
 
 .about {
-    min-height: 100vh;
+    max-height: 100vh;
     position: relative;
     padding-top: 50px;
     background-color: var(--second-color);
+    padding-bottom: 5rem;
 }
 
 .about h1,
@@ -337,7 +338,7 @@ b{
     display: flex;
 }
 
-.row {
+.projects .row {
     position: relative;
     margin-top: 20px;
     border-radius: 24px;
@@ -422,7 +423,7 @@ b{
 /* Contact  */
 
 .contact {
-    min-height: 100vh;
+    max-height: 100vh;
     padding-top: 50px;
 }
 
@@ -438,6 +439,7 @@ b{
 .boxs {
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 3rem;
 }
 
 .box1,
@@ -486,6 +488,35 @@ footer {
     background-color: var(--second-color);
 }
 
+.copyright {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.footer-comment {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.footer-exp {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+footer li a {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color) !important;
+}
+
+.colour {
+    color: var(--first-color);
+    font-weight: 600;
+}
+
+
 
 
 /* col-sm for larger mobile phones (devices with resolutions ≥ 576px);
@@ -495,7 +526,11 @@ col-xl for desktops (≥1200px) */
 
 @media screen and (max-width: 576px){
     .skills {
-        min-height: 155vh;
+        min-height: 100vh;
+    }
+
+    .skills .row {
+        margin-bottom: 5rem;
     }
     
     .content {
@@ -535,6 +570,8 @@ col-xl for desktops (≥1200px) */
         font-size: 14vw;
     }
 }
+
+
 @media screen and (min-width: 576px){
     
 }
@@ -546,7 +583,7 @@ col-xl for desktops (≥1200px) */
     }
 
     .skills {
-        min-height: 155vh;
+        min-height: 100vh;
     }
 
     .about h1,
@@ -565,6 +602,7 @@ col-xl for desktops (≥1200px) */
     }
 
 }
+
 @media screen and (min-width: 768px){
     body{
         margin: 0;
@@ -688,6 +726,7 @@ col-xl for desktops (≥1200px) */
 
     .box2 {
         margin-top: 1rem;
+        margin-bottom: 2rem;
     }
 
     .contact h2 {
@@ -695,6 +734,14 @@ col-xl for desktops (≥1200px) */
         margin-bottom: 25px;
     }
 
+    .box1,
+    .box2 {
+        width: 325px;
+    }
+
+    .skills {
+        min-height: 117vh;
+    }
 }
 
 @media screen and (min-width: 992px){
@@ -727,6 +774,6 @@ col-xl for desktops (≥1200px) */
     }
 
     .skills {
-        min-height: 118vh;
+        min-height: 107vh;
     }
 }
